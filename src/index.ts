@@ -79,7 +79,7 @@ class Client<Schema = any> {
         } else if ('query' in connectionConf) {
             this.pool = connectionConf;
         } else {
-            
+            this.pool = mysql.createPool(connectionConf);
         }
     }
 

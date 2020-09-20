@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./build",
+    "outDir": "./dist",
     "allowJs": true,
     "target": "es6",
     "alwaysStrict": true,
@@ -12,7 +12,8 @@
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
-    "module": "CommonJS"
+    "module": "CommonJS",
+    "declaration": true
   },
   "include": ["./src/**/*"]
 }

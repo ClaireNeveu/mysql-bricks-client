@@ -2,7 +2,10 @@
   "name": "mysql-bricks-client",
   "version": "0.0.1",
   "description": "Type-safe MySQL client using SQL Bricks",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "dependencies": {
+    "copyfiles": "^2.3.0",
     "mysql": "^2.18.1",
     "mysql-bricks": "^1.1.1",
     "sql-bricks": "^2.0.5"
@@ -17,8 +20,10 @@
     "typescript": "^4.0.3"
   },
   "scripts": {
+    "prepublish": "npm run build",
+    "build": "npx tsc && copyfiles -u 2 \"src/types/*.d.ts\" dist",
     "test": "echo \"Error: no test specified\" && exit 1",
-	"docs": "npx typedoc src/ --out docs/ --includeDeclarations --excludeExternals --excludeNotExported --excludePrivate"
+    "docs": "npx typedoc src/ --out docs/ --includeDeclarations --excludeExternals --excludeNotExported --excludePrivate"
   },
   "keywords": [
     "mysql"
