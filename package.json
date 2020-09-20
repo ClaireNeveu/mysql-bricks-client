@@ -1,6 +1,6 @@
 {
   "name": "mysql-bricks-client",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Type-safe MySQL client using SQL Bricks",
   "dependencies": {
     "mysql": "^2.18.1",
