@@ -1,5 +1,5 @@
 # mysql-bricks-client
-This is a simple mysql client built on top of [SQL Bricks](http://csnw.github.io/sql-bricks/).
+This is a simple mysql client built on top of [SQL Bricks](http://csnw.github.io/sql-bricks/). API documentation can be found [here](https://claireneveu.github.io/mysql-bricks-client/)
 
 ## Schema
 mysql-bricks-client adds limited schema support via typescript allowing you to statically verify that you're referencing columns that actually exist (and getting back correct return types).
